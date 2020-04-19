@@ -1,17 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 class Welcome extends React.Component {
 
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
   }
 
   render () {
-    const { user } = this.props;
+    const { userName } = this.props;
     return (
       <div className="container">
         <div className="pt-4">
-            <h3> Welcome { user} ! </h3>
+            <h3> Welcome { userName } ! </h3>
         </div>
       </div>
     );
